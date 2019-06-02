@@ -1,3 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1 id="title">This is a JavaScript program</h1>
+
 <script>
-alert(1)
+var myFnlStr="";
+var i;
+var str = document.getElementById("title").innerHTML;
+var splStr = str.split("");
+var revrs_spltdArr =splStr.reverse();
+
+for(i=0; i<str.length;i++)
+{
+	var fnlStr = revrs_spltdArr[i];
+    myFnlStr = myFnlStr + fnlStr;
+}
+
+document.getElementById("title").innerHTML = myFnlStr;
 </script>
+
+</body>
+</html>
+
